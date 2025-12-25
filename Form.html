@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <section class="form-section">
+      <h2 class="form-title">Write a Review</h2>
+
+      <form id="form" class="form-container">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" id="reviewerName" required />
+        </div>
+
+        <div class="form-group">
+          <label>Rating (1-5)</label>
+          <input type="number" id="reviewsRating" min="1" max="5" required />
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <select id="reviewerGender" required>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Your Message</label>
+          <textarea id="reviewContent" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="form-submit-btn">Submit</button>
+      </form>
+
+      <p id="formStatus" class="form-status"></p>
+    </section>
+   <script type="module" src="js/form.js"></script>
+
+  </body>
+</html>
