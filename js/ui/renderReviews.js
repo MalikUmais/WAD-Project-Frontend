@@ -29,8 +29,8 @@ function createReviewCard(review) {
 
     const avatar = document.createElement('img');
     avatar.src = review.reviewerGender === "Female"
-        ? "../../assets/svgs/female-svgrepo-com.svg"
-        : "../../assets/svgs/male-svgrepo-com.svg";
+        ? "./assets/svgs/female-svgrepo-com.svg"
+        : "./assets/svgs/male-svgrepo-com.svg";
     avatar.alt = "Avatar";
     avatar.className = 'avatar';
 
