@@ -79,8 +79,12 @@ export function showSuccessModal() {
     modal.classList.add("active");
 }
 
-document.getElementById("closeSuccessBtn").addEventListener("click", () => {
-    const modal = document.getElementById("successModal");
-    modal.classList.remove("active");
-});
+const closeBtn = document.getElementById("closeSuccessBtn");
+
+if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+        const modal = document.getElementById("successModal");
+        if (modal) modal.classList.remove("active");
+    });
+}
 
