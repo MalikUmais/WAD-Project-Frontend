@@ -1,8 +1,8 @@
 import { getProducts } from "./api/productApi.js";
 import { renderProducts } from "./ui/renderProducts.js";
 
-import { getReviews } from "./api/reviewApi.js";
-import { renderReviews } from "./ui/renderReviews.js";
+import { getReviews } from "/js/api/reviewApi.js";
+import { renderReviews } from "js/ui/renderReviews.js";
 
 import { renderCart, confirmOrder } from "./cart.js";
 document.addEventListener("DOMContentLoaded", init);
